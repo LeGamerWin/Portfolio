@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Ioahn RAMIANDRASOA PortFolio</title>
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link href="https://fonts.cdnfonts.com/css/itc-avant-garde-gothic-std-book" rel="stylesheet">
+    <style>
+        .center-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 80vh;
+            text-align: center;
+            width: 60%; /* Limite la largeur du conteneur */
+            margin: 0 auto; /* Centre le conteneur horizontalement */
+        }
+        .center-container {
+            max-width: 100%;
+            height: auto;
+        }
+        .center-container h1 {
+            color: #f0c300;
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+        .center-container p {
+            color: #f0c300;
+            font-size: 1.5em;
+        }
+        .center-container button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+    <Header>
+        <div class="logo">My Portfolio</div>
+        <div class="navItems">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <nav class="nav-bar">
+            <ul>
+                <li>
+                    <a href="../index.html" class="active">Home</a>
+                </li>
+                <li>
+                    <a href="#about">A propos</a>
+                </li>
+                <li>
+                    <a href="#skills">Compétences</a>
+                </li>
+                <li>
+                    <a href="#projects">Projets</a>
+                </li>
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </Header>
+    <script>
+        navItems = document.querySelector(".navItems");
+        navItems.onclick = function() {
+            navBar = document.querySelector(".nav-bar");
+            navBar.classList.toggle("active");
+        }
+    </script>
+    <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+    <script type="text/javascript">
+        $(document).on('scroll', function(){
+            $('h1').css("left", Math.max(300 - 0.35*window.ScrollY) + "px");
+        })
+    </script>
+     <img src="../pictures/personnel.jpeg" alt="parking" style="max-width: 100%; height: auto;  display: block; margin-left: auto; margin-right: auto;padding-top: 100px;">
+
+    <div class="center-container">
+        
+        <h1>Projet Application personnel</h1>
+        <p> Cette application est une solution simplifiée pour la gestion du personnel d'une organisation, développée en ligne de commande selon une architecture 3-tiers et conçue pour évoluer vers une application multi-utilisateurs grâce à une base de données. 
+            <br>Elle repose sur trois niveaux d'habilitation distincts :</p><br>
+            <br><p>Employé standard : accès en lecture uniquement.</p><br>           
+            <br><p>Administrateur de ligue : gestion des employés de sa ligue.</p><br>
+            <p>Super-administrateur (ROOT) : contrôle global.</p>
+            <br><p>Technologie utilisé : JAVA</p><br>
+        <button onclick="window.open('../Ressources/personnel.pdf', '_blank')">Ouvrir la documentation PDF</button>
+    </div>
+    
+    <Footer>
+        <div class="footer-clean">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="colomn">
+                        <h3>Services</h3>
+                        <ul>
+                            <li><a href="#about">Web design</a></li>
+                            <li><a href="#skills">Front-end</a></li>
+                        </ul>
+                    </div>
+                    <div class="colomn">
+                        <h3>Contact</h3>
+                        <ul>
+                            <li><a href="#">ioahnmirija@gmail.com</a></li>
+                            <li><a href="#">IG:Ioahn_mrj</a></li>
+                        </ul>
+                    </div>
+                    <div class="colomn">
+                        <h3>About</h3>
+                        <ul>
+                            <li><a href="#projects">Project</a></li>
+                            <li><a href="#projects">Project</a></li>
+                        </ul>
+                    </div>
+                    <p class="copyright">Ioahn Mirija © 2023</p>
+                </div>
+            </div>
+        </div>
+    </Footer>
+</body>
+</html>
