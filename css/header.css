@@ -91,3 +91,13 @@ header {
     }
 }
 
+.logo-text {
+    color: white;
+    text-decoration: none; /* Retire le soulignement */
+    font-size: 24px; /* Taille de la police */
+    font-weight: bold;
+}
+
+.logo-text:hover {
+    opacity: 0.8; /* Effet léger au survol */
+}
